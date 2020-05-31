@@ -38,8 +38,7 @@ const axiosRequest = async (method: AxiosMethod, url: string, data?: any) => {
       message = 'Your request was invalid.';
     } else if (e.request) {
       console.log(e.request);
-      message =
-        'Our server is experiencing technical issues. Please call us or email us at support@manamed.com';
+      message = 'Our server is experiencing technical issues.';
     } else {
       console.log('Error:', e.message);
       message = 'We could not submit your request';

@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    "outDir": "./dist/",
     "sourceMap": true,
     "strict": true,
     "noImplicitReturns": true,
@@ -9,6 +8,7 @@
     "moduleResolution": "node",
     "target": "es5",
     "allowJs": true,
+    "rootDir": "src",
     "jsx": "react",
     "esModuleInterop": true
   },
