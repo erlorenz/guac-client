@@ -1,16 +1,14 @@
-export enum HttpMethod {
-  Get = 'get',
-  Post = 'post',
-  Patch = 'patch',
-  Delete = 'delete',
-  Put = 'put',
-}
+export type HttpMethod = 'get' | 'put' | 'patch' | 'post' | 'delete';
 
 export interface HttpData {
   [key: string]: any;
 }
 
-export const http = async (method: string, url: string, body?: HttpData) => {
+export const http = async (
+  method: HttpMethod,
+  url: string,
+  body?: HttpData
+) => {
   console.log(`[REQUEST] ${method} ==> ${url}`);
 
   // Decide if it needs a request body
@@ -41,7 +39,7 @@ export const http = async (method: string, url: string, body?: HttpData) => {
       };
     }
   } catch (ex) {
-    console.log(ex);
+    console.log('[ERROR]', ex);
     return {
       error: 'The request failed.',
     };
