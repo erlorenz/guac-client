@@ -1,13 +1,13 @@
 {
-  "name": "react-parcel-typescript-starter",
+  "name": "guac-client",
   "version": "1.0.0",
-  "description": "",
+  "description": "Guac Client Side React Application",
   "main": "index.js",
   "scripts": {
     "clean": "rimraf dist && rimraf .cache",
-    "dev": "parcel src/index.html -p 8080 --open",
-    "build": "parcel build src/index.html",
-    "debug": "parcel src/index.html -p 5000",
+    "dev": "parcel public/index.html -p 8080 --open",
+    "build": "parcel build public/index.html",
+    "debug": "parcel public/index.html -p 8080",
     "initialize": "rm -rf .git && git init && git add . && git commit -m 'First commit'"
   },
   "keywords": [],
